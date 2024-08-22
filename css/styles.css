@@ -185,3 +185,56 @@ body, html {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra da imagem */
     margin-left: 2rem; /* Adiciona margem à esquerda para espaçamento */
 }
+
+.projetos-title {
+    font-family: 'MagicRetro', sans-serif;
+    font-size: 7rem; /* Ajuste o tamanho conforme necessário */
+    color: #430202; /* Mesma cor utilizada nos outros títulos */
+    margin: 0;
+    line-height: 1; /* Ajuste o espaçamento entre linhas */
+    text-align: center; /* Alinha o título no centro */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 2rem; /* Espaçamento abaixo do título */
+}
+
+.projeto-card {
+    flex: 1;
+    min-height: 400px; /* Ajuste conforme necessário para garantir espaço suficiente para o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.projeto-card img {
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Faz a imagem preencher o espaço definido sem distorcer */
+    width: 100%; /* Garante que a largura ocupe todo o espaço disponível */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Faz com que todos os cards tenham a mesma altura */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+.btn-primary {
+    background-color: #3F5B52 !important; /* Cor de fundo do botão */
+    border-color: #3F5B52 !important; /* Cor da borda do botão */
+    color: #fff !important; /* Cor do texto */
+}
+
+.btn-primary:hover {
+    background-color: #3F5B52 !important; /* Cor de fundo ao passar o mouse */
+    border-color: #3F5B52 !important; /* Cor da borda ao passar o mouse */
+    color: #fff !important; /* Cor do texto ao passar o mouse */
+}
+
+
+#projetos {
+    background-color: #fdf8f0; /* Cor de fundo da seção de projetos */
+    padding: 2rem 0; /* Espaçamento interno */
+}
