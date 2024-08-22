@@ -34,7 +34,6 @@ body, html {
     margin-top: 4.5rem; /* Aumente este valor para mover o título para baixo */
 }
 
-
 .portfolio {
     color: #D0913E;
     font-size: 7rem;
@@ -55,8 +54,6 @@ body, html {
     font-weight: 700;
     color: #ffffff;
 }
-
-
 
 .hero-button {
     display: inline-block;
@@ -105,4 +102,86 @@ body, html {
 
 .nav-links a:hover {
     text-decoration: underline; /* Efeito de hover */
+}
+
+
+.hero-name.rebecca {
+    font-family: 'MagicRetro', sans-serif;
+    font-size: 7rem;
+    color: #430202;
+    margin: 0;
+    line-height: 0.7;
+    text-align: left;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona a sombra */
+}
+
+.hero-name.morlin {
+    font-family: 'MagicRetro', sans-serif;
+    font-size: 7rem;
+    color: #430202;
+    margin: 0;
+    line-height: 0.7;
+    text-align: left;
+    margin-left: 1rem; /* Ajuste de margem para alinhar */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona a sombra */
+}
+
+.description {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.4rem; /* Aumenta o tamanho da fonte */
+    color: #333;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.name-section {
+    background-color: #fdf8f0;
+    padding: 2rem 5rem;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-top: 3rem; /* Adiciona uma margem superior para afastar do Hero */
+}
+
+.subtitle {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    color: #FFFFFF; /* Muda a cor do texto para branco */
+    background-color: #3F5B52; /* Muda a cor de fundo para um verde mais escuro */
+    padding: 0.5rem 2rem; /* Ajusta o espaço interno */
+    border: 2px solid #3F5B52; /* Adiciona uma borda verde-escura */
+    border-radius: 12px; /* Faz os cantos mais arredondados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    display: inline-block; /* Faz com que a caixa ocupe apenas o espaço necessário */
+    margin-top: 1rem; /* Adiciona um espaço acima da caixa */
+}
+
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #fdf8f0;
+}
+
+.about-image img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à imagem */
+}
+
+.name-section {
+    flex: 1; /* Faz com que o texto ocupe mais espaço */
+    margin-right: 2rem; /* Espaço entre o texto e a imagem */
+}
+
+.about-image img {
+    width: 450px; /* Tamanho da imagem ajustado */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra da imagem */
+    margin-left: 2rem; /* Adiciona margem à esquerda para espaçamento */
 }
