@@ -14,7 +14,7 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 📂 Estrutura do Projeto
 
-```bash
+
 PortfolioPessoal/
 ├── css/
 │   └── styles.css
@@ -30,6 +30,7 @@ PortfolioPessoal/
 ├── index.html
 ├── README.md
 └── LICENSE
+ 
 
 ## Funcionalidades
 
