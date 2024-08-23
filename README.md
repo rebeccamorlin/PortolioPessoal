@@ -12,9 +12,17 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 - **Bootstrap**: Componentes responsivos prontos.
 - **GitHub Pages**: Hospedagem do projeto.
 
+## Funcionalidades
+
+- Página Inicial: Com uma hero section que apresenta o propósito do portfólio.
+- Seção "Sobre Mim": Descreve brevemente minha experiência e habilidades.
+- Seção de Projetos: Apresenta os principais projetos com links para visualização.
+- Seção de Habilidades: Mostra meu nível de proficiência em diferentes ferramentas e tecnologias.
+- Seção de Contato: Formulário para que visitantes entrem em contato comigo.
+
 ## 📂 Estrutura do Projeto
 
-
+```bash
 PortfolioPessoal/
 ├── css/
 │   └── styles.css
@@ -30,12 +38,3 @@ PortfolioPessoal/
 ├── index.html
 ├── README.md
 └── LICENSE
- 
-
-## Funcionalidades
-
-- Página Inicial: Com uma hero section que apresenta o propósito do portfólio.
-- Seção "Sobre Mim": Descreve brevemente minha experiência e habilidades.
-- Seção de Projetos: Apresenta os principais projetos com links para visualização.
-- Seção de Habilidades: Mostra meu nível de proficiência em diferentes ferramentas e tecnologias.
-- Seção de Contato: Formulário para que visitantes entrem em contato comigo.
