@@ -3,12 +3,12 @@
     src: url('../fonts/Magic Retro.ttf') format('truetype');
 }
 
-body, html {
+html, body {
+    background-color: #fdf8f0; /* A cor de fundo desejada */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .hero {
@@ -74,35 +74,49 @@ body, html {
     background-color: #ddd;
 }
 
+
 .navbar {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
-    justify-content: center; /* Alinha o conteúdo no centro */
+    justify-content: center; /* Centraliza os links na navbar */
     padding: 1rem;
+    background-color: #430202;
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 .nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto; /* Centraliza os links dentro da navbar */
+    padding: 0;
     gap: 2rem;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #fff; /* Cor do texto */
-    font-family: 'Crimson Text', serif; /* Alinha com a fonte usada */
-    font-weight: bold;
-    font-size: 1.2rem;
+.nav-links li {
+    list-style: none;
 }
 
-.nav-links a:hover {
-    text-decoration: underline; /* Efeito de hover */
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
 }
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+
+
 
 
 .hero-name.rebecca {
@@ -136,7 +150,6 @@ body, html {
 }
 
 .name-section {
-    background-color: #fdf8f0;
     padding: 2rem 5rem;
     display: inline-block;
     text-align: left;
@@ -165,7 +178,6 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
-    background-color: #fdf8f0;
 }
 
 .about-image img {
@@ -230,11 +242,151 @@ body, html {
 .btn-primary:hover {
     background-color: #3F5B52 !important; /* Cor de fundo ao passar o mouse */
     border-color: #3F5B52 !important; /* Cor da borda ao passar o mouse */
-    color: #fff !important; /* Cor do texto ao passar o mouse */
+    color: #fff !important; 
 }
 
 
-#projetos {
-    background-color: #fdf8f0; /* Cor de fundo da seção de projetos */
-    padding: 2rem 0; /* Espaçamento interno */
+.container {
+    max-width: 1200px; /* Ajusta a largura máxima do conteúdo */
+    margin: 0 auto;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+}
+
+.habilidades-title {
+    font-family: 'MagicRetro', sans-serif;
+    font-size: 7rem;
+    color: #430202;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.habilidade-item {
+    margin-bottom: 2rem;
+}
+
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+    background-color: #3F5B52 !important;  
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#habilidades {
+    padding: 50px 20px; /* Espaçamento interno da seção de habilidades */
+    
+}
+
+.skill-bar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.skill-bar-inner {
+    height: 100%;
+    width: 0;
+    background-color: #3b5949; /* Cor do preenchimento */
+    border-radius: 15px;
+    transition: width 1.5s ease-in-out;
+}
+
+.skills-section {
+    margin: 60px 0;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-family: 'MagicRetro', sans-serif;
+    font-size: 7rem;
+    color: #430202;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+.skill-name {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.skill-percentage {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.skill {
+    margin-bottom: 30px; /* Adiciona espaço entre as barras de habilidade */
+}
+
+
+/* Animação */
+@keyframes fillSkillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Estilos aplicados quando a seção entra na tela */
+.reveal .skill-bar-inner {
+    animation: fillSkillBar 1.5s ease-in-out forwards;
+}
+
+.contact-section {
+    padding: 50px 0; /* Espaçamento interno */
+}
+
+.contact-title {
+    font-family: 'MagicRetro', Crimson Text;
+    font-size: 7rem;
+    color: #430202;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info h4 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #430202;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Crimson Text', serif; /* Adiciona a fonte Crimson Text */
+    font-weight: 700;
+}
+
+.contact-info ul {
+    padding: 0;
+}
+
+.contact-info li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #3F5B52;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #2f4f41;
 }
